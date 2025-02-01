@@ -26,13 +26,9 @@ jobs:
       run: |
         npm run build  # Run the Vite build command (creates the 'dist' folder)
 
-    - name: Debugging: List files in the repository
-      run: |
-        ls -alh  # List the files in the directory to confirm that 'dist' is created
-
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: main         # Deploy to the 'main' branch
         folder: dist         # Vite outputs to the 'dist' folder
-        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token to authenticate the deployment
+        token: ${{ secrets.PORTFOLIO_TOKEN }}  # GitHub token to authenticate the deployment
