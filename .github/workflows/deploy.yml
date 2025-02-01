@@ -24,15 +24,15 @@ jobs:
 
     - name: Build the app
       run: |
-        npm run build  # Run the build command (creates the 'build' folder for React or Vite)
+        npm run build  # Run the Vite build command (creates the 'dist' folder)
 
     - name: Debugging: List files in the repository
       run: |
-        ls -alh  # List the files in the directory to confirm that 'build' or 'dist' is created
+        ls -alh  # List the files in the directory to confirm that 'dist' is created
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main         # Deploy to the 'main' branch (since that’s where you want the deployment)
-        folder: build        # Ensure that the 'build' folder is used (for React/Vite build)
-        token: ${{ secrets.PORTFOLIO_TOKEN }}  # GitHub token to authenticate the deployment
+        branch: main         # Deploy to the 'main' branch
+        folder: dist         # Vite outputs to the 'dist' folder
+        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token to authenticate the deployment
