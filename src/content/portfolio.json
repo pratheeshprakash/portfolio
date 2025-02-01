@@ -1,0 +1,108 @@
+{
+  "personal": {
+    "name": "Pratheesh Prakash",
+    "title": "Robotics & Embedded Systems Engineer",
+    "summary": "Pioneering the future of robotics and embedded systems with over a decade of experience in designing and implementing cutting-edge solutions. Specialized in autonomous systems, real-time control, and hardware optimization.",
+    "contact": {
+      "email": "pratheeshprakash@gmail.com",
+      "github": "github.com/johnanderson",
+      "linkedin": "linkedin.com/in/johnanderson"
+    },
+    "expertise": [
+      {
+        "name": "Robotics",
+        "icon": "Notebook"
+      },
+      {
+        "name": "Embedded Systems",
+        "icon": "Cpu"
+      },
+      {
+        "name": "Hardware Design",
+        "icon": "Wrench"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "autonomous-delivery-robot",
+      "title": "Autonomous Delivery Robot",
+      "year": "2023",
+      "description": "Developed an autonomous delivery robot capable of navigating complex indoor environments using SLAM and computer vision.",
+      "detailedOverview": "Our autonomous delivery robot represents a breakthrough in indoor navigation and delivery automation. The system utilizes advanced SLAM algorithms for real-time mapping and localization, combined with deep learning-based computer vision for obstacle detection and dynamic path planning.",
+      "architecture": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200",
+        "description": "High-level architecture diagram showing the robot's main components and data flow"
+      },
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
+      "tech": ["ROS", "Python", "Computer Vision", "SLAM"]
+    },
+    {
+      "id": "smart-factory-control",
+      "title": "Smart Factory Control System",
+      "year": "2022",
+      "description": "Designed and implemented a distributed control system for automated manufacturing processes using industrial IoT sensors.",
+      "detailedOverview": "The Smart Factory Control System revolutionizes manufacturing by implementing a fully distributed architecture. It features real-time monitoring, predictive maintenance, and adaptive process control through a network of IoT sensors and edge computing nodes.",
+      "architecture": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+        "description": "System architecture showing the IoT sensor network and control hierarchy"
+      },
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80&w=800",
+      "tech": ["PLC", "MQTT", "Industrial IoT", "C++"]
+    },
+    {
+      "id": "prosthetic-hand",
+      "title": "Prosthetic Hand Controller",
+      "year": "2023",
+      "description": "Created an embedded system for controlling a prosthetic hand using EMG signals and machine learning.",
+      "detailedOverview": "This advanced prosthetic hand controller uses EMG signal processing and machine learning to provide intuitive control. The system features real-time pattern recognition, adaptive learning, and haptic feedback for enhanced user experience.",
+      "architecture": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=1200",
+        "description": "Detailed diagram of the EMG signal processing pipeline and control system"
+      },
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "https://images.unsplash.com/photo-1624705002806-5d751f82bd5f?auto=format&fit=crop&q=80&w=800",
+      "tech": ["ARM", "Machine Learning", "Signal Processing"]
+    },
+    {
+      "id": "drone-swarm",
+      "title": "Drone Swarm System",
+      "year": "2021",
+      "description": "Developed coordination algorithms for a swarm of autonomous drones performing collaborative tasks.",
+      "detailedOverview": "The Drone Swarm System enables multiple autonomous drones to work together seamlessly. The system implements distributed consensus algorithms, collision avoidance, and task allocation for efficient mission execution.",
+      "architecture": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1581092160607-f6aa4589c089?auto=format&fit=crop&q=80&w=1200",
+        "description": "Architecture showing swarm communication and coordination mechanisms"
+      },
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800",
+      "tech": ["Python", "Swarm Intelligence", "Control Systems"]
+    },
+    {
+      "id": "robot-arm",
+      "title": "Industrial Robot Arm",
+      "year": "2021",
+      "description": "Designed control systems for a 6-DOF robotic arm with real-time path planning and obstacle avoidance.",
+      "detailedOverview": "This industrial robot arm features advanced control systems with real-time path planning and dynamic obstacle avoidance. The system includes inverse kinematics solving, trajectory optimization, and force feedback control.",
+      "architecture": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1581092160563-28a5c2fd4f91?auto=format&fit=crop&q=80&w=1200",
+        "description": "System architecture showing control loops and motion planning components"
+      },
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "https://images.unsplash.com/photo-1531746790731-6bf607ccff6f?auto=format&fit=crop&q=80&w=800",
+      "tech": ["C++", "ROS", "Motion Planning"]
+    }
+  ],
+  "seo": {
+    "title": "Pratheesh Prakash - Robotics & Embedded Systems Engineer",
+    "description": "Pratheesh Prakash - Robotics & Embedded Systems Engineer Portfolio",
+    "keywords": ["robotics", "embedded systems", "hardware design", "engineering portfolio"]
+  }
+}
