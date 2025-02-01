@@ -1,0 +1,34 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # This triggers the workflow when you push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Check out the code from the repository
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify the Node.js version
+
+    - name: Install dependencies
+      run: |
+        npm install  # Install project dependencies
+
+    - name: Build the app
+      run: |
+        npm run build  # Run the Vite build command (creates the 'dist' folder)
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: main         # Deploy to the 'main' branch
+        folder: dist         # Vite outputs to the 'dist' folder
+        token: ${{ secrets.PORTFOLIO_TOKEN }}  # GitHub token to authenticate the deployment
