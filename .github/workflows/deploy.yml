@@ -35,4 +35,4 @@ jobs:
       with:
         branch: gh-pages         # Deploy to the 'gh-pages' branch instead of 'main'
         folder: build     
-        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token to authenticate the deployment
+        token: ${{ secrets.PORTFOLIO_TOKEN }}  # GitHub token to authenticate the deployment
