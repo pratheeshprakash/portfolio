@@ -1,0 +1,133 @@
+{
+  "personal": {
+    "name": "Pratheesh Prakash",
+    "title": "Robotteknologi- og Indlejrede Systemer Ingeniør",
+    "summary": "Baner vejen for fremtidens robotteknologi og indlejrede systemer med over et årtis erfaring i design og implementering af banebrydende løsninger. Specialiseret i autonome systemer, realtidskontrol og hardwareoptimering.",
+    "contact": {
+      "email": "pratheeshprakash@gmail.com",
+      "github": "github.com/johnanderson",
+      "linkedin": "linkedin.com/in/johnanderson"
+    },
+    "expertise": [
+      {
+        "name": "Robotteknologi",
+        "icon": "Notebook"
+      },
+      {
+        "name": "Indlejrede Systemer",
+        "icon": "Cpu"
+      },
+      {
+        "name": "Hardware Design",
+        "icon": "Wrench"
+      }
+    ]
+  },
+  "sections": {
+    "projectTimeline": "Projekt Tidslinje",
+    "getInTouch": "Kontakt Os",
+    "overview": "Oversigt",
+    "technologies": "Teknologier",
+    "architecture": "Arkitektur"
+  },
+  "contact": {
+    "name": "Navn",
+    "email": "Email",
+    "message": "Besked",
+    "sendMessage": "Send Besked",
+    "sending": "Sender...",
+    "success": "Tak! Din besked er blevet sendt.",
+    "error": "Beklager, noget gik galt. Prøv venligst igen senere."
+  },
+  "projects": [
+    {
+      "id": "baggage-handling-robot",
+      "title": "Automatiseret Bagagehåndteringsrobot",
+      "description": "Udviklede et intelligent robotsystem til automatiseret bagagehåndtering i lufthavne med realtidssporing og smart ruteplanlægning.",
+      "detailedOverview": "Den automatiserede bagagehåndteringsrobot revolutionerer lufthavnslogistik med sit avancerede AI-drevne system. Den kombinerer computersyn til bagagegenkendelse, smart ruteplanlægning og realtidssporingsmuligheder.",
+      "year": "2023",
+      "tech": ["ROS2", "Python", "Computer Vision", "AI/ML"],
+      "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Systemarkitekturdiagram der viser integration af forskellige komponenter"
+      }
+    },
+    {
+      "id": "autonomous-delivery-robot",
+      "title": "Autonom Leveringsrobot",
+      "description": "Udviklede en autonom leveringsrobot, der kan navigere i komplekse indendørsmiljøer ved hjælp af SLAM og computersyn.",
+      "detailedOverview": "Vores autonome leveringsrobot repræsenterer et gennembrud inden for indendørs navigation og leveringsautomatisering. Systemet bruger avancerede SLAM-algoritmer til realtidskortlægning og lokalisering.",
+      "year": "2023",
+      "tech": ["ROS", "C++", "SLAM", "Computer Vision"],
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Detaljeret systemarkitektur for det autonome navigationssystem"
+      }
+    },
+    {
+      "id": "smart-factory-control",
+      "title": "Smart Fabrikskontrolsystem",
+      "description": "Designede og implementerede et distribueret kontrolsystem til automatiserede produktionsprocesser ved hjælp af industrielle IoT-sensorer.",
+      "detailedOverview": "Smart Factory-kontrolsystemet revolutionerer fremstilling ved at implementere en fuldt distribueret arkitektur. Det har realtidsovervågning, forudsigende vedligeholdelse og adaptiv proceskontrol.",
+      "year": "2022",
+      "tech": ["Python", "IoT", "MQTT", "Node.js"],
+      "image": "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Fabrikskontrolsystem arkitekturdiagram"
+      }
+    },
+    {
+      "id": "prosthetic-hand",
+      "title": "Protesehåndkontroller",
+      "description": "Skabte et indlejret system til styring af en protesehånd ved hjælp af EMG-signaler og maskinlæring.",
+      "detailedOverview": "Denne avancerede protesehåndkontroller bruger EMG-signalbehandling og maskinlæring til at give intuitiv kontrol. Systemet har realtidsmønstergenkendelse og adaptiv læring.",
+      "year": "2022",
+      "tech": ["C++", "Machine Learning", "EMG", "Arduino"],
+      "image": "https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Protesehånd kontrolsystem arkitektur"
+      }
+    },
+    {
+      "id": "drone-swarm",
+      "title": "Dronesværmsystem",
+      "description": "Udviklede koordineringsalgoritmer til en sværm af autonome droner, der udfører samarbejdsopgaver.",
+      "detailedOverview": "Dronesværmsystemet gør det muligt for flere autonome droner at arbejde sammen problemfrit. Systemet implementerer distribuerede konsensusalgoritmer og kollisionsundgåelse.",
+      "year": "2021",
+      "tech": ["Python", "ROS", "Computer Vision", "AI"],
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Dronesværm koordinationssystem arkitektur"
+      }
+    },
+    {
+      "id": "robot-arm",
+      "title": "Industriel Robotarm",
+      "description": "Designede kontrolsystemer til en 6-DOF robotarm med realtids ruteplanlægning og forhindringundgåelse.",
+      "detailedOverview": "Denne industrielle robotarm har avancerede kontrolsystemer med realtids ruteplanlægning og dynamisk forhindringundgåelse. Systemet inkluderer løsning af invers kinematik.",
+      "year": "2021",
+      "tech": ["C++", "ROS", "Motion Planning", "Computer Vision"],
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Robotarm kontrolsystem arkitektur"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Pratheesh Prakash - Robotteknologi- og Indlejrede Systemer Ingeniør",
+    "description": "Pratheesh Prakash - Portfolio for Robotteknologi og Indlejrede Systemer",
+    "keywords": ["robotteknologi", "indlejrede systemer", "hardware design", "ingeniør-portfolio"]
+  }
+}
