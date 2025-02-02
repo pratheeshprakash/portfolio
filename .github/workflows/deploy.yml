@@ -1,0 +1,36 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # This triggers the workflow when you push to the 'main' branch (you can keep it as is)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Check out the code from the repository
+
+    - name: Checkout specific commit
+      run: |
+        git checkout <COMMIT_HASH>  # Replace <COMMIT_HASH> with the actual commit hash you want to deploy
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify the Node.js version
+
+    - name: Install dependencies
+      run: |
+        npm install  # Install project dependencies
+    - name: Build the app
+      run: |
+        npm run build  # Run the build command (creates the 'build' folder for React/Vite)
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages         # Deploy to the 'gh-pages' branch instead of 'main'
+        folder: dist     
+        clean: true              # Clean the existing 'gh-pages' branch before deploying
+        token: ${{ secrets.PORTFOLIO_TOKEN }}  # GitHub token to authenticate the deployment

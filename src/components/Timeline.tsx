@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import content from '../content/portfolio.json';
 import ProjectModal from './ProjectModal';
 
+interface TimelineProps {
+  content: any;
+}
+
 const TimelineItem = ({ project, index, onProjectClick }: { 
-  project: typeof content.projects[0], 
+  project: any, 
   index: number,
-  onProjectClick: (project: typeof content.projects[0]) => void 
+  onProjectClick: (project: any) => void
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -39,7 +42,7 @@ const TimelineItem = ({ project, index, onProjectClick }: {
             <p className="text-blue-400 mb-2">{project.year}</p>
             <p className="text-gray-300 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
-              {project.tech.map((tech, i) => (
+              {project.tech.map((tech: string, i: number) => (
                 <span
                   key={i}
                   className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm"
@@ -55,18 +58,18 @@ const TimelineItem = ({ project, index, onProjectClick }: {
   );
 };
 
-const Timeline = () => {
-  const [selectedProject, setSelectedProject] = useState<typeof content.projects[0] | null>(null);
+const Timeline: React.FC<TimelineProps> = ({ content }) => {
+  const [selectedProject, setSelectedProject] = useState<any | null>(null);
 
   return (
     <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white text-center mb-16">
-          Projects
+          {content.sections.projectTimeline}
         </h2>
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-900" />
-          {content.projects.map((project, index) => (
+          {content.projects.map((project: any, index: number) => (
             <TimelineItem 
               key={project.id} 
               project={project} 
@@ -81,6 +84,7 @@ const Timeline = () => {
         project={selectedProject}
         isOpen={!!selectedProject}
         onClose={() => setSelectedProject(null)}
+        content={content}
       />
     </section>
   );

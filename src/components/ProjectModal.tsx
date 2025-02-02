@@ -6,10 +6,11 @@ interface ProjectModalProps {
   project: any;
   isOpen: boolean;
   onClose: () => void;
+  content: any;
 }
 
-const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
-  if (!isOpen) return null;
+const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose, content }) => {
+  if (!isOpen || !project) return null;
 
   return (
     <AnimatePresence>
@@ -52,13 +53,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             )}
 
             <div>
-              <h3 className="text-xl font-semibold text-white mb-2">Overview</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{content.sections.overview}</h3>
               <p className="text-gray-300">{project.detailedOverview}</p>
             </div>
 
             {project.architecture?.url && (
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Architecture</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">{content.sections.architecture}</h3>
                 <img
                   src={project.architecture.url}
                   alt={project.architecture.description}
@@ -71,7 +72,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             )}
 
             <div>
-              <h3 className="text-xl font-semibold text-white mb-2">Technologies</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{content.sections.technologies}</h3>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech: string, index: number) => (
                   <span
