@@ -38,33 +38,39 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             </button>
           </div>
 
-          <div className="p-6">
-            <div className="aspect-video mb-6">
-              <iframe
-                src={project.video}
-                title={`${project.title} video`}
-                className="w-full h-full rounded-lg"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+          <div className="p-6 space-y-8">
+            {project.video && (
+              <div className="aspect-video">
+                <iframe
+                  src={project.video}
+                  title={`${project.title} video`}
+                  className="w-full h-full rounded-lg"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            )}
 
-            <div className="mb-6">
+            <div>
               <h3 className="text-xl font-semibold text-white mb-2">Overview</h3>
               <p className="text-gray-300">{project.detailedOverview}</p>
             </div>
 
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-white mb-2">Architecture</h3>
-              <img
-                src={project.architecture.url}
-                alt={project.architecture.description}
-                className="w-full rounded-lg"
-              />
-              <p className="text-sm text-gray-400 mt-2">{project.architecture.description}</p>
-            </div>
+            {project.architecture?.url && (
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Architecture</h3>
+                <img
+                  src={project.architecture.url}
+                  alt={project.architecture.description}
+                  className="w-full rounded-lg"
+                />
+                {project.architecture.description && (
+                  <p className="text-sm text-gray-400 mt-2">{project.architecture.description}</p>
+                )}
+              </div>
+            )}
 
-            <div className="mb-6">
+            <div>
               <h3 className="text-xl font-semibold text-white mb-2">Technologies</h3>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech: string, index: number) => (

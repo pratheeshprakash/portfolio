@@ -2,32 +2,50 @@
   "personal": {
     "name": "Pratheesh Prakash",
     "title": "Robotics & Embedded Systems Engineer",
-    "summary": "Pioneering the future of robotics and embedded systems with over a decade of experience in designing and implementing cutting-edge solutions. Specialized in autonomous systems, real-time control, and hardware optimization.",
+"summary": "I am a Senior Autonomous Control Systems Engineer with over decade and a half of experience in full-stack robotics development. My expertise spans across both software and hardware for robots, drones, and IoT, utilizing technologies like ROS, Angular, Python, C, and C++.\n\nI specialize in mission-planners, rapid prototyping, product development, and mechanical & electronic design. I have a proven track record in leading multi-disciplinary teams, solving complex engineering challenges, and building Autonomous Mobile Robots (AMRs) and drones.\n\nWith a solid foundation in mechatronics, software design, and digital manufacturing, I ensure the efficient use of resources and timely project completion.\n\nMy diverse skill set and leadership experience allow me to deliver innovative solutions.",
     "contact": {
       "email": "pratheeshprakash@gmail.com",
-      "github": "github.com/johnanderson",
-      "linkedin": "linkedin.com/in/johnanderson"
+      "github": "github.com/pratheeshprakash",
+      "linkedin": "linkedin.com/in/pratheeshprakash"
     },
     "expertise": [
       {
         "name": "Robotics",
+        "icon": "Bot"
+      },
+      {
+        "name": "STEM",
         "icon": "Notebook"
       },
       {
-        "name": "Embedded Systems",
-        "icon": "Cpu"
-      },
+        "name": "IoT",
+        "icon": "Wifi"
+      },      
       {
-        "name": "Hardware Design",
-        "icon": "Wrench"
+        "name": "Embedded",
+        "icon": "Cpu"
       }
     ]
   },
   "projects": [
     {
-      "id": "autonomous-delivery-robot",
-      "title": "Autonomous Delivery Robot",
-      "year": "2023",
+      "id": "baggage-handling-robot",
+      "title": "Automated Baggage Handling Robot",
+      "year": "2024",
+      "description": "Developed an intelligent robotic system for automated baggage handling in airports, featuring obstacle detection and smart routing capabilities.",
+      "detailedOverview": "The Automated Baggage Handling Robot revolutionizes airport logistics. It combines smart path planning for efficient routing, and real-time tracking capabilities. The robot can handle various baggage sizes and weights, automatically sort items based on flight destinations and navigate complex airport environments while avoiding obstacles and human traffic. The system integrates with existing airport management systems.",
+      "architecture": {
+        "type": "image",
+        "url": "src/content/images/AutonomousBaggageHandler.jpg",
+        "description": "Baggage Handling Robot"
+      },
+      "image": "src/content/images/AutonomousBaggageHandler.jpg",
+      "tech": ["PLUS +1 GUIDE", "LIDAR", "RADAR", "Real-time Systems"]
+    },
+    {
+      "id": "autonomous_systems_dashboard",
+      "title": "Autonomous Systems Dashboard",
+      "year": "2024",
       "description": "Developed an autonomous delivery robot capable of navigating complex indoor environments using SLAM and computer vision.",
       "detailedOverview": "Our autonomous delivery robot represents a breakthrough in indoor navigation and delivery automation. The system utilizes advanced SLAM algorithms for real-time mapping and localization, combined with deep learning-based computer vision for obstacle detection and dynamic path planning.",
       "architecture": {

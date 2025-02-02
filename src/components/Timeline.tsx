@@ -62,7 +62,7 @@ const Timeline = () => {
     <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white text-center mb-16">
-          Project Timeline
+          Projects
         </h2>
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-900" />
