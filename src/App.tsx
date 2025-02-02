@@ -12,14 +12,14 @@ function App() {
     const loadContent = async () => {
       try {
         // First load the translation lookup to determine which file to use
-        const lookupResponse = await fetch('/src/content/translation_lookup.json');
+        const lookupResponse = await fetch('/content/translation_lookup.json');
         const lookup = await lookupResponse.json();
         
         // Get the translation file path from the lookup
         const translationFile = lookup.languages[language];
         
         // Load the actual content
-        const contentResponse = await fetch(`/src/content/${translationFile}`);
+        const contentResponse = await fetch(`/content/${translationFile}`);
         const data = await contentResponse.json();
         setContent(data);
       } catch (error) {

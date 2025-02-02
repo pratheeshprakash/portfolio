@@ -52,10 +52,10 @@
       "detailedOverview": "Developed and optimized a hardware-in-loop system by evaluating and enhancing visualization tools. This involved creating a proof of concept (POC) using RVIZ to visualize the system and evaluating the Plus One Service tool’s visualizer, leveraging its internal JavaScript functionality, also developed modular libraries for the Plus One Service tool, utilizing WebSockets to design a scalable web visualizer frontend.\n\nAdditionally, architected a web-based plugin for visualizing point clouds from the Ouster Lidar, enabling real-time data visualization for robot controllers and sensors. This resulted in a 30% improvement in the efficiency of developing, testing, and tuning robot applications on  Plus One GUIDE (Danfoss), significantly accelerating the workflow and optimizing performance.",
       "architecture": {
         "type": "image",
-        "url": "src/content/images/AutonomousSystemsDashboard.jfif",
+        "url": "/content/images/AutonomousSystemsDashboard.jfif",
         "description": "Autonomous Systems Dashboard"
       },
-      "image": "src/content/images/AutonomousSystemsDashboard.jfif",
+      "image": "/content/images/AutonomousSystemsDashboard.jfif",
       "tech": [
         "Web Visualiser",
         "Plus +1 GUIDE",
@@ -74,10 +74,10 @@
       "detailedOverview": "The Automated Baggage Handling Robot revolutionizes airport logistics. It combines smart path planning for efficient routing, and real-time tracking capabilities. The robot can handle various baggage sizes and weights and navigate complex airport environments while avoiding obstacles and human traffic. The system is designed to integrate with existing airport management systems.",
       "architecture": {
         "type": "image",
-        "url": "src/content/images/AutonomousBaggageHandler.jpg",
+        "url": "/content/images/AutonomousBaggageHandler.jpg",
         "description": "Baggage Handling Robot"
       },
-      "image": "src/content/images/AutonomousBaggageHandler.jpg",
+      "image": "/content/images/AutonomousBaggageHandler.jpg",
       "tech": [
         "PLUS +1 GUIDE",
         "LIDAR",
@@ -97,9 +97,9 @@
         "Rviz",
         "Robotic Arm"
       ],
-      "image": "src/content/images/SmartDose.jfif",
+      "image": "/content/images/SmartDose.jfif",
       "architecture": {
-        "url": "src/content/images/SmartDose.jfif",
+        "url": "/content/images/SmartDose.jfif",
         "description": "Smart Dose Robot assembling medicine delivery"
       }
     },
@@ -115,9 +115,9 @@
         "Rviz",
         "Robotic Arm"
       ],
-      "image": "src/content/images/FillandFinish.jfif",
+      "image": "/content/images/FillandFinish.jfif",
       "architecture": {
-        "url": "src/content/images/FillandFinish.jfif",
+        "url": "/content/images/FillandFinish.jfif",
         "description": "Robot filling medicne vials"
       }
     },
@@ -134,9 +134,9 @@
         "HMI",
         "UI/UX"
       ],
-      "image": "src/content/images/NavApp.jfif",
+      "image": "/content/images/NavApp.jfif",
       "architecture": {
-        "url": "src/content/images/NavApp.jfif",
+        "url": "/content/images/NavApp.jfif",
         "description": "Navigation App for AMR robots"
       }
     },
@@ -152,9 +152,9 @@
         "ESP32",
         "Cloud"
       ],
-      "image": "src/content/images/Nlock.jfif",
+      "image": "/content/images/Nlock.jfif",
       "architecture": {
-        "url": "src/content/images/Nlock.jfif",
+        "url": "/content/images/Nlock.jfif",
         "description": "N-Lock IoT Notification Device"
       }
     },
@@ -208,9 +208,9 @@
         "3D Printing",
         "Mecanum Drive"
       ],
-      "image": "src/content/images/HIRO.jpg",
+      "image": "/content/images/HIRO.jpg",
       "architecture": {
-        "url": "src/content/images/HIRO.jpg",
+        "url": "/content/images/HIRO.jpg",
         "description": "Humanoid robot"
       }
     },
@@ -263,9 +263,9 @@
         "Connected App",
         "Wi-Fi"
       ],
-      "image": "src/content/images/ThingZ.png",
+      "image": "/content/images/ThingZ.png",
       "architecture": {
-        "url": "src/content/images/ThingZ.png",
+        "url": "/content/images/ThingZ.png",
         "description": "IOT Platform"
       }
     },
@@ -280,9 +280,9 @@
         "DFM",
         "Analog Electronics"
       ],
-      "image": "src/content/images/ElectronicsSchool.jpg",
+      "image": "/content/images/ElectronicsSchool.jpg",
       "architecture": {
-        "url": "src/content/images/electronicsSchoolArch.jpg",
+        "url": "/content/images/electronicsSchoolArch.jpg",
         "description": "STEM kit"
       }
     }
