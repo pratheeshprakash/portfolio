@@ -1,0 +1,133 @@
+{
+  "personal": {
+    "name": "Pratheesh Prakash",
+    "title": "Robotik- und Embedded-Systems-Ingenieur",
+    "summary": "Wegbereiter für die Zukunft der Robotik und eingebetteter Systeme mit über einem Jahrzehnt Erfahrung in der Entwicklung und Implementierung modernster Lösungen. Spezialisiert auf autonome Systeme, Echtzeit-Steuerung und Hardware-Optimierung.",
+    "contact": {
+      "email": "pratheeshprakash@gmail.com",
+      "github": "github.com/johnanderson",
+      "linkedin": "linkedin.com/in/johnanderson"
+    },
+    "expertise": [
+      {
+        "name": "Robotik",
+        "icon": "Notebook"
+      },
+      {
+        "name": "Eingebettete Systeme",
+        "icon": "Cpu"
+      },
+      {
+        "name": "Hardware-Design",
+        "icon": "Wrench"
+      }
+    ]
+  },
+  "sections": {
+    "projectTimeline": "Projekt-Zeitlinie",
+    "getInTouch": "Kontakt",
+    "overview": "Überblick",
+    "technologies": "Technologien",
+    "architecture": "Architektur"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "sendMessage": "Nachricht Senden",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+    "error": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut."
+  },
+  "projects": [
+    {
+      "id": "baggage-handling-robot",
+      "title": "Automatisierter Gepäckabfertigungsroboter",
+      "description": "Entwicklung eines intelligenten Robotersystems für die automatisierte Gepäckabfertigung an Flughäfen mit Echtzeit-Tracking und intelligenter Routenplanung.",
+      "detailedOverview": "Der automatisierte Gepäckabfertigungsroboter revolutioniert die Flughafenlogistik mit seinem fortschrittlichen KI-gesteuerten System. Er kombiniert maschinelles Sehen für die Gepäckerkennung mit intelligenter Routenplanung.",
+      "year": "2023",
+      "tech": ["ROS2", "Python", "Computer Vision", "AI/ML"],
+      "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Systemarchitekturdiagramm, das die Integration verschiedener Komponenten zeigt"
+      }
+    },
+    {
+      "id": "autonomous-delivery-robot",
+      "title": "Autonomer Lieferroboter",
+      "description": "Entwicklung eines autonomen Lieferroboters, der komplexe Innenräume mit SLAM und maschinellem Sehen navigieren kann.",
+      "detailedOverview": "Unser autonomer Lieferroboter stellt einen Durchbruch in der Indoor-Navigation und Lieferautomatisierung dar. Das System verwendet fortschrittliche SLAM-Algorithmen für Echtzeit-Mapping und Lokalisierung.",
+      "year": "2023",
+      "tech": ["ROS", "C++", "SLAM", "Computer Vision"],
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Detaillierte Systemarchitektur des autonomen Navigationssystems"
+      }
+    },
+    {
+      "id": "smart-factory-control",
+      "title": "Smart Factory Steuerungssystem",
+      "description": "Entwicklung und Implementierung eines verteilten Steuerungssystems für automatisierte Fertigungsprozesse mit industriellen IoT-Sensoren.",
+      "detailedOverview": "Das Smart Factory Steuerungssystem revolutioniert die Fertigung durch eine vollständig verteilte Architektur. Es bietet Echtzeit-Überwachung und vorausschauende Wartung.",
+      "year": "2022",
+      "tech": ["Python", "IoT", "MQTT", "Node.js"],
+      "image": "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Fabriksteuerungssystem-Architekturdiagramm"
+      }
+    },
+    {
+      "id": "prosthetic-hand",
+      "title": "Prothesenhand-Controller",
+      "description": "Entwicklung eines eingebetteten Systems zur Steuerung einer Prothesenhand mittels EMG-Signalen und maschinellem Lernen.",
+      "detailedOverview": "Dieser fortschrittliche Prothesenhand-Controller verwendet EMG-Signalverarbeitung und maschinelles Lernen für eine intuitive Steuerung. Das System bietet Echtzeit-Mustererkennung.",
+      "year": "2022",
+      "tech": ["C++", "Machine Learning", "EMG", "Arduino"],
+      "image": "https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Prothesenhand-Steuerungssystem-Architektur"
+      }
+    },
+    {
+      "id": "drone-swarm",
+      "title": "Drohnenschwarm-System",
+      "description": "Entwicklung von Koordinationsalgorithmen für einen Schwarm autonomer Drohnen bei kollaborativen Aufgaben.",
+      "detailedOverview": "Das Drohnenschwarm-System ermöglicht mehreren autonomen Drohnen eine nahtlose Zusammenarbeit. Das System implementiert verteilte Konsensalgorithmen und Kollisionsvermeidung.",
+      "year": "2021",
+      "tech": ["Python", "ROS", "Computer Vision", "AI"],
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Drohnenschwarm-Koordinationssystem-Architektur"
+      }
+    },
+    {
+      "id": "robot-arm",
+      "title": "Industrieller Roboterarm",
+      "description": "Entwicklung von Steuerungssystemen für einen 6-DOF Roboterarm mit Echtzeit-Pfadplanung und Hindernisvermeidung.",
+      "detailedOverview": "Dieser industrielle Roboterarm verfügt über fortschrittliche Steuerungssysteme mit Echtzeit-Pfadplanung und dynamischer Hindernisvermeidung. Das System umfasst inverse Kinematik.",
+      "year": "2021",
+      "tech": ["C++", "ROS", "Motion Planning", "Computer Vision"],
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Roboterarm-Steuerungssystem-Architektur"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Pratheesh Prakash - Robotik- und Embedded-Systems-Ingenieur",
+    "description": "Pratheesh Prakash - Portfolio für Robotik und eingebettete Systeme",
+    "keywords": ["robotik", "eingebettete systeme", "hardware-design", "ingenieur-portfolio"]
+  }
+}

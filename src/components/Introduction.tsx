@@ -2,9 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import * as Icons from 'lucide-react';
-import content from '../content/portfolio.json';
 
-const Introduction = () => {
+interface IntroductionProps {
+  content: any;
+}
+
+const Introduction: React.FC<IntroductionProps> = ({ content }) => {
   return (
     <section className="min-h-screen relative bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -30,7 +33,7 @@ const Introduction = () => {
           </h2>
           
           <div className="flex justify-center gap-8 mb-12">
-            {content.personal.expertise.map((skill) => {
+            {content.personal.expertise.map((skill: any) => {
               const IconComponent = Icons[skill.icon as keyof typeof Icons];
               return (
                 <motion.div

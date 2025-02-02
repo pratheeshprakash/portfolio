@@ -2,9 +2,12 @@ import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, MessageSquare, AlertCircle, CheckCircle2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import content from '../content/portfolio.json';
 
-const Contact = () => {
+interface ContactProps {
+  content: any;
+}
+
+const Contact: React.FC<ContactProps> = ({ content }) => {
   const formRef = useRef<HTMLFormElement>(null);
   const [formState, setFormState] = useState({
     from_name: '',
@@ -36,14 +39,14 @@ const Contact = () => {
       if (result.text === 'OK') {
         setStatus({
           type: 'success',
-          message: 'Thank you! Your message has been sent successfully.'
+          message: content.contact.success
         });
         setFormState({ from_name: '', from_email: '', message: '' });
       }
     } catch (error) {
       setStatus({
         type: 'error',
-        message: 'Sorry, something went wrong. Please try again later.'
+        message: content.contact.error
       });
     } finally {
       setIsSubmitting(false);
@@ -67,12 +70,12 @@ const Contact = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-4xl font-bold text-white text-center mb-16">
-            Get in Touch
+            {content.sections.getInTouch}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Info</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">{content.sections.getInTouch}</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-blue-400" />
@@ -115,7 +118,7 @@ const Contact = () => {
                 )}
 
                 <div>
-                  <label htmlFor="from_name" className="block text-gray-300 mb-2">Name</label>
+                  <label htmlFor="from_name" className="block text-gray-300 mb-2">{content.contact.name}</label>
                   <input
                     type="text"
                     id="from_name"
@@ -124,11 +127,10 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400"
-                    aria-label="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="from_email" className="block text-gray-300 mb-2">Email</label>
+                  <label htmlFor="from_email" className="block text-gray-300 mb-2">{content.contact.email}</label>
                   <input
                     type="email"
                     id="from_email"
@@ -137,11 +139,10 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400"
-                    aria-label="Your email"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
+                  <label htmlFor="message" className="block text-gray-300 mb-2">{content.contact.message}</label>
                   <textarea
                     id="message"
                     name="message"
@@ -150,11 +151,9 @@ const Contact = () => {
                     required
                     rows={4}
                     className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400"
-                    aria-label="Your message"
                   />
                 </div>
 
-                {/* Hidden fields for EmailJS template */}
                 <input type="hidden" name="to_email" value={content.personal.contact.email} />
 
                 <motion.button
@@ -167,7 +166,7 @@ const Contact = () => {
                   }`}
                 >
                   <MessageSquare className="w-5 h-5" />
-                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                  <span>{isSubmitting ? content.contact.sending : content.contact.sendMessage}</span>
                 </motion.button>
               </form>
             </div>
