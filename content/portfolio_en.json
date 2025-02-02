@@ -1,0 +1,300 @@
+{
+  "personal": {
+    "name": "Pratheesh Prakash",
+    "title": "Robotics & Embedded Systems Engineer",
+    "summary": "I am a Senior Autonomous Control Systems Engineer with over decade and a half of experience in full-stack robotics development. My expertise spans across both software and hardware for robots, drones, and IoT, utilizing technologies like ROS, Angular, Python, C, and C++.\n\nI specialize in mission-planners, rapid prototyping, product development, and mechanical & electronic design. I have a proven track record in leading multi-disciplinary teams, solving complex engineering challenges, and building Autonomous Mobile Robots (AMRs) and drones.\n\nWith a solid foundation in mechatronics, software design, and digital manufacturing, I ensure the efficient use of resources and timely project completion.\n\nMy diverse skill set and leadership experience allow me to deliver innovative solutions.",
+    "contact": {
+      "email": "pratheeshprakash@gmail.com",
+      "github": "github.com/pratheeshprakash",
+      "linkedin": "linkedin.com/in/pratheeshprakash"
+    },
+    "expertise": [
+      {
+        "name": "Robotics",
+        "icon": "Bot"
+      },
+      {
+        "name": "STEM",
+        "icon": "Notebook"
+      },
+      {
+        "name": "IoT",
+        "icon": "Wifi"
+      },
+      {
+        "name": "Embedded",
+        "icon": "Cpu"
+      }
+    ]
+  },
+  "sections": {
+    "projectTimeline": "Project Timeline",
+    "getInTouch": "Get in Touch",
+    "overview": "Overview",
+    "technologies": "Technologies",
+    "architecture": "Architecture"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully.",
+    "error": "Sorry, something went wrong. Please try again later."
+  },
+  "projects": [
+    {
+      "id": "autonomous_systems_dashboard",
+      "title": "Autonomous Systems Dashboard",
+      "year": "2024",
+      "description": "Developed a Hardware in Loop system for Visualisation of Robotics and sensors data on a web based interface, using Websockets and JavaScript.",
+      "detailedOverview": "Developed and optimized a hardware-in-loop system by evaluating and enhancing visualization tools. This involved creating a proof of concept (POC) using RVIZ to visualize the system and evaluating the Plus One Service tool’s visualizer, leveraging its internal JavaScript functionality, also developed modular libraries for the Plus One Service tool, utilizing WebSockets to design a scalable web visualizer frontend.\n\nAdditionally, architected a web-based plugin for visualizing point clouds from the Ouster Lidar, enabling real-time data visualization for robot controllers and sensors. This resulted in a 30% improvement in the efficiency of developing, testing, and tuning robot applications on  Plus One GUIDE (Danfoss), significantly accelerating the workflow and optimizing performance.",
+      "architecture": {
+        "type": "image",
+        "url": "/content/images/AutonomousSystemsDashboard.jfif",
+        "description": "Autonomous Systems Dashboard"
+      },
+      "image": "/content/images/AutonomousSystemsDashboard.jfif",
+      "tech": [
+        "Web Visualiser",
+        "Plus +1 GUIDE",
+        "HIL",
+        "WebSockets",
+        "JS",
+        "Point Cloud",
+        "LIDAR"
+      ]
+    },
+    {
+      "id": "Autonomous_baggage_handler",
+      "title": "Automated Baggage Handling Robot",
+      "year": "2024",
+      "description": "Developed an intelligent robotic system for automated baggage handling in airports, featuring obstacle detection and smart routing capabilities.",
+      "detailedOverview": "The Automated Baggage Handling Robot revolutionizes airport logistics. It combines smart path planning for efficient routing, and real-time tracking capabilities. The robot can handle various baggage sizes and weights and navigate complex airport environments while avoiding obstacles and human traffic. The system is designed to integrate with existing airport management systems.",
+      "architecture": {
+        "type": "image",
+        "url": "/content/images/AutonomousBaggageHandler.jpg",
+        "description": "Baggage Handling Robot"
+      },
+      "image": "/content/images/AutonomousBaggageHandler.jpg",
+      "tech": [
+        "PLUS +1 GUIDE",
+        "LIDAR",
+        "RADAR",
+        "Real-time Systems"
+      ]
+    },
+    {
+      "id": "smart_dose",
+      "title": "Smart Dose",
+      "description": "Designed robotic cells with Omron TM5-900 manipulators and Schunk EGH 80 grippers to automate and optimize medicine delivery assembly.",
+      "detailedOverview": "Designed and architected robotic cells for flexible automation in the assembly line of medicine delivery, utilizing three Omron TM5-900 manipulators to complete assembly in under 2 minutes. Developed multiple grippers using Schunk EGH 80 to ensure mechanical reliability and repeatability in the processes.",
+      "year": "2023",
+      "tech": [
+        "ROS2",
+        "Gazebo",
+        "Rviz",
+        "Robotic Arm"
+      ],
+      "image": "/content/images/SmartDose.jfif",
+      "architecture": {
+        "url": "/content/images/SmartDose.jfif",
+        "description": "Smart Dose Robot assembling medicine delivery"
+      }
+    },
+    {
+      "id": "fill_and_finish",
+      "title": "Fill and Finish",
+      "description": "Designed and developed a robotic cell for vial filling and capping in aseptic conditions, optimizing efficiency with Staubli TX260 Robot and Hybrid Gripper.",
+      "detailedOverview": "Designed and architected a standalone robotic cell for vial filling and capping in ISO5 aseptic conditions, utilizing two ‘Staubli TX260’ aseptic manipulators to fill 500-600 vials per hour. Accelerated the development process through regular course corrections and mentoring sessions for the team. Developed an optimized hybrid gripper using the ‘Schunk EGL gripper’ to perform both mechanical and pneumatic tasks. Simulated the entire system in ROS2 Gazebo for validation and performance assessment.",
+      "year": "2022",
+      "tech": [
+        "ROS2",
+        "Gazebo",
+        "Rviz",
+        "Robotic Arm"
+      ],
+      "image": "/content/images/FillandFinish.jfif",
+      "architecture": {
+        "url": "/content/images/FillandFinish.jfif",
+        "description": "Robot filling medicne vials"
+      }
+    },
+    {
+      "id": "nav_app",
+      "title": "NavApp",
+      "description": "Designed and developed an intuitive HMI for AMR robots, enhancing data visualization, task sequencing, and fleet management integration.",
+      "detailedOverview": "Designed and developed a Human-Machine Interface (HMI) for an AMR robot, scalable for integration into fleet management software. Led the UI/UX team in creating an intuitive web app for visualizing data and sending commands to the robot. Improved ROS2DJS and NAV2DJS libraries to enhance LIDAR data plotting, path plotting, No-Go zone creation, and waypoint navigation. Developed a custom JavaScript library for visualizing robot data, including map, battery percentage, and ETA for tasks. Created a front-end task sequencer for sending tasks to the robot and improved map functionality with zoom, pan, and interactive markers for robot paths and points of interest.",
+      "year": "2021",
+      "tech": [
+        "ROS",
+        "JavaScript",
+        "LIDAR",
+        "HMI",
+        "UI/UX"
+      ],
+      "image": "/content/images/NavApp.jfif",
+      "architecture": {
+        "url": "/content/images/NavApp.jfif",
+        "description": "Navigation App for AMR robots"
+      }
+    },
+    {
+      "id": "n_lock",
+      "title": "N-Lock",
+      "description": "Designed an ultra-low power IoT N-Lock Notification Device with ESP32 and NB-IoT, featuring 2-year battery life.",
+      "detailedOverview": "Designed and developed an IoT-based N-Lock Notification Device to alert users when a door is opened during non-working hours. The device features an ultra-low power IoT board using ESP32 and U-blocks NB-IoT controller, operating on the MQTT protocol. Developed ultra-low power power supply and firmware, enabling the device to run for 2 years on a single cell. Additionally, created an app to configure the device via Bluetooth for easy user setup.",
+      "year": "2021",
+      "tech": [
+        "NB-IoT",
+        "MQTT",
+        "ESP32",
+        "Cloud"
+      ],
+      "image": "/content/images/Nlock.jfif",
+      "architecture": {
+        "url": "/content/images/Nlock.jfif",
+        "description": "N-Lock IoT Notification Device"
+      }
+    },
+    {
+      "id": "autonomous_robotic_carrier",
+      "title": "Autonomous Robotic Carrier",
+      "description": "Designed and developed a production-ready differential drive AMR with ROS Noetic integration, SLAM algorithms, and advanced perception using RP-lidar.",
+      "detailedOverview": "Designed and manufactured a production-ready differential drive AMR with a 200kg payload capacity. Architected and developed the software stack in ROS Noetic, integrating and tuning various SLAM and planning algorithms. Led the development of a unique compliant mechanical design in Fusion360 and developed embedded hardware and firmware for kinematics and servo motor control. Coordinated cross-team collaborations with product design and engineering teams. Implemented robot perception using RP-lidar and ROS sensor fusion, followed by testing and validation of both hardware and software.",
+      "year": "2020",
+      "tech": [
+        "C++",
+        "ROS",
+        "Motion Planning",
+        "SLAM",
+        "Fusion 360"
+      ],
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "AMR robot"
+      }
+    },
+    {
+      "id": "q_stem",
+      "title": "Q-STEM kit",
+      "description": "Developed the Q STEM kit with IoT connectivity, e-learning app integration, and a user-friendly hardware connector for improved interaction and communication.",
+      "detailedOverview": "Developed an enhanced version of the Electrobricks kit, Q (2019), with IoT connectivity and the ability to connect to an e-learning app for seamless hardware/software interaction. Designed a hardware connector inspired by the MagSafe connector to make it easier for smaller hands to use. Additionally, developed a protocol layer on the serial communication layer to enable the bricks to process information and communicate with the main controller.",
+      "year": "2019",
+      "tech": [
+        "STEM",
+        "E-Learning",
+        "IOT"
+      ],
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200",
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Developed the Q STEM kit with IoT connectivity, e-learning app integration, and a user-friendly hardware connector for improved interaction and communication."
+      }
+    },
+    {
+      "id": "humanoid_intended_for_robotics_operation",
+      "title": "Humanoid Intended for Robotics Operation",
+      "description": "Designed and developed a humanoid robot with ROS Kinetic, featuring a custom mecanum drive, teleoperation, and a UI for displaying facial emotions.",
+      "detailedOverview": "Designed and built a humanoid robot for customer interactions, architecting the software stack in ROS Kinetic. Developed a mecanum drive system using self-made mecanum wheels and industrial servos. Led a design and manufacturing team to create a unique composite material body, while improving the CAD-to-composite manufacturing process. Developed embedded hardware and firmware for motor control, kinematics, and sensor data reading. Integrated a ROS-based locomotion stack with a joystick-based teleoperation node for holonomic movement and developed a ROS-based UI to display faces with emotions on the robot’s screen.",
+      "year": "2018",
+      "tech": [
+        "ROS",
+        "CAD",
+        "3D Printing",
+        "Mecanum Drive"
+      ],
+      "image": "/content/images/HIRO.jpg",
+      "architecture": {
+        "url": "/content/images/HIRO.jpg",
+        "description": "Humanoid robot"
+      }
+    },
+    {
+      "id": "soft_switch",
+      "title": "SoftSwitch",
+      "description": "Designed an IoT ecosystem with MQTT protocol, integrating switches, sensors, and voice control via Amazon Alexa, using ESP32 and solid-state hardware for advanced functionality.",
+      "detailedOverview": "Designed and developed an IoT hardware ecosystem based on the MQTT protocol, featuring switches, regulators, sensors, and bells compatible with Home Assistant. Integrated Home Assistant with Amazon Alexa for voice control. Designed a circuit board using ESP32 and solid-state hardware (BT139), incorporating functionality for touch controls, lighting for touch buttons, AC switching with dimming, and silent operation.",
+      "year": "2018",
+      "tech": [
+        "IoT",
+        "MQTT",
+        "ESP32",
+        "Alexa"
+      ],
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "Drone swarm coordination system architecture"
+      }
+    },
+    {
+      "id": "quasi_direct_drive",
+      "title": "Quasi Direct Drive Actuator",
+      "description": "Developed a high-torque BLDC servo motor with integrated driver and ESP32 microcontroller, reducing complexity in AMR design through sensor-less feedback.",
+      "detailedOverview": "Developed a BLDC servo motor with an integrated driver for robotics applications, enabling high torque and reducing complexity in Autonomous Mobile Robot (AMR) design. The system was designed using the ESP32 microcontroller, inspired by the open-source Moteus Controller. Additionally, the concept of sensor-less feedback was evaluated to further reduce system complexity.",
+      "year": "2018",
+      "tech": [
+        "BLDC",
+        "Sensorless Driver",
+        "ESP32"
+      ],
+      "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200",
+      "architecture": {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1200",
+        "description": "QDD BLDC intergrated motor"
+      }
+    },
+    {
+      "id": "thing_z",
+      "title": "ThingZ",
+      "description": "Designed a modular IoT motherboard with ESP32 for AWS cloud communication, scalable firmware, and a Wi-Fi configurable app for seamless device management.",
+      "detailedOverview": "Designed a modular IoT motherboard using ESP32 to communicate with a client's AWS cloud platform via MQTT. Developed scalable firmware to support multiple customer products and architected the system design for hardware, software, and user interface (app). The app featured the ability to configure devices via Wi-Fi.",
+      "year": "2017",
+      "tech": [
+        "IoT",
+        "MQTT",
+        "ESP32",
+        "Cloud",
+        "Connected App",
+        "Wi-Fi"
+      ],
+      "image": "/content/images/ThingZ.png",
+      "architecture": {
+        "url": "/content/images/ThingZ.png",
+        "description": "IOT Platform"
+      }
+    },
+    {
+      "id": "electrobricks_stem",
+      "title": "Electrobricks STEM Kit",
+      "description": "Designed and developed the Electrobricks DIY STEM kit, enabling the statewide implementation of the ‘Electronics at School’ project across 3000+ schools in Kerala.",
+      "detailedOverview": "Designed and developed a DIY STEM kit, Electrobricks, to help explain complex scientific concepts in a tangible way. Architected the kit with color-coded components for easier understanding and made it modular and pluggable to allow for infinite combinations. Designed using only analog electronics, the kit was marketed to the Government of Kerala, leading to the successful implementation of the ‘Electronics at School’ project in over 3000 schools statewide. Conducted teacher training for 1200 staff members and applied Design for Manufacturing (DFM) techniques to produce 3700 kits indigenously in India within a short time frame.",
+      "year": "2015",
+      "tech": [
+        "STEM",
+        "DFM",
+        "Analog Electronics"
+      ],
+      "image": "/content/images/ElectronicsSchool.jpg",
+      "architecture": {
+        "url": "/content/images/electronicsSchoolArch.jpg",
+        "description": "STEM kit"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Pratheesh Prakash - Robotics & Embedded Systems Engineer",
+    "description": "Pratheesh Prakash - Robotics & Embedded Systems Engineer Portfolio",
+    "keywords": [
+      "robotics",
+      "embedded systems",
+      "hardware design",
+      "engineering portfolio"
+    ]
+  }
+}
